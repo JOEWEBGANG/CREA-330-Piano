@@ -39,10 +39,33 @@ body {
   z-index: 2;
 }
 
+.red{
+    --width:100px;
+    background-color: red;
+    border: 1px solid #333;
+}
+
+.blue{
+    --width: 60px;
+  background-color: blue;
+  margin-left: calc(var(--width) / -2);
+  margin-right: calc(var(--width) / -2);
+  z-index: 2;
+  border: 1px solid #333;
+}
+
 .white.active {
     background-color: #ccc;
   }
   
   .black.active {
     background-color: #333;
+  }
+
+  .red.active{
+    background-color: darkred;
+  }
+
+  .blue.active{
+    background-color: darkblue;
   }
